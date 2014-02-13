@@ -1,0 +1,26 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "quito3_sp",
+        "image": "quito3_s2"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 4,
+			"atv": 0.0,
+			"ath": 140.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 140.0, true); load('res://raw/json_spherical2_quito2', true, BLEND(2.0, 1.0), 0.0, 0.0)"
+		}
+	]
+}

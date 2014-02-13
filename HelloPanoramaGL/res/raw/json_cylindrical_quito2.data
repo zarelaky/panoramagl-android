@@ -1,0 +1,35 @@
+{
+    "urlBase": "res://raw",
+    "type": "cylindrical",
+    "keep": "all",
+    "images":
+    {
+        "preview": "quito2_sp",
+        "image": "quito2_s"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 2,
+			"atv": 0.0,
+			"ath": 0.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 0.0, true); load('res://raw/json_cylindrical', true, BLEND(2.0, 1.0), 0.0, 0.0)"
+		},
+		{
+			"id": 3,
+			"atv": 0.0,
+			"ath": 190.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 190.0, true); load('res://raw/json_cylindrical_quito3', true, BLEND(2.0, 1.0), 15.0, -3.0)"
+		}
+	]
+}

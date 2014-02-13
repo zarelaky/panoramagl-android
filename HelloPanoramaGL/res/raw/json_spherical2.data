@@ -1,0 +1,32 @@
+{
+    "urlBase": "res://raw",
+    "type": "spherical2",
+    "keep": "all",
+    "images":
+    {
+        "preview": "quito1_sp",
+        "image": "quito1_s2"
+    },
+    "camera":
+    {
+    	"keep": "all|~atvRange|~rotation|~fov",
+        "atvMin": -90.0,
+        "atvMax": 90.0,
+        "vLookAt": 0.0,
+        "hLookAt": 170.0
+    },
+    "hotspots":
+	[
+		{
+			"id": 1,
+			"atv": 0.0,
+			"ath": 170.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"alpha": 0.8,
+			"overAlpha": 1.0,
+			"onClick": "lookAt(0.0, 170.0, true); load('res://raw/json_spherical2_quito2', true, BLEND(2.0, 1.0), 0.0, 190.0)"
+		}
+	]
+}

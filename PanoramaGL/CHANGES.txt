@@ -1,0 +1,80 @@
+0.2 beta (August/2013)
+======================
+
+WARNING:
+
+The version 0.2 is different than 0.1, the library structure was changed. If you are using an older version of PanoramaGL, you need to change your code to work with this version.
+
+Please check the last version of HelloPanoramaGL example.
+
+Bugs fixed:
+
+- Bitmap recycle problem on Android 3.x or higher.
+- Aspect ratio changes with different screen sizes.
+- OpenGL 1.0 wrong axis rotation.
+- Camera rotation acceleration (too fast by default).
+- Camera rotation sensitivity is too fast when the zoom increases.
+- Camera field of view range (wrong range).
+- Camera field of view sensitivity (too fast by default).
+- Camera properties vLookAt and hLookAt in JSON protocol do not work properly.
+- Reset with 3 fingers on screen (works when the Touch Move event is fired).
+- Problem with scrolling and inertia together.
+- setImage method in PLSpherical2Panorama only loads images of 2048x1024 pixels.
+- Hotspot click detection (vertical offset problem).
+- Accelerometer problem with camera reverse rotation.
+- Sensorial rotation and camera initial rotation.
+- Android emulator detection.
+
+Improvements:
+
+- Support for SDK 2.0 to 4.2.2.
+- Supports UI hardware acceleration for Android 3.x or higher.
+- New options and HTTP/S support for JSON protocol. Note: some property names had changed for camera.
+- JSON protocol can be used to create virtual tours.
+- Supports transitions between panoramas.
+- New options for camera: setZoomLevels, setZoomLevel, setZoomFactor, lookAtAndFov, lookAtAndFovFactor and lookAtAndZoomFactor methods.
+- Camera animations: setFov, setFovFactor, setZoomLevel, setZoomFactor, lookAt, lookAtAndFov, lookAtAndFovFactor and lookAtAndZoomFactor methods.
+- Commands for Hotspot using the onClick property: load, lookAt, lookAtAndZoom, zoom and fov commands.
+- Hotspot width and height are float values from 0.0 to 1.0, that represent the panorama's diameter at percentage.
+- ProgressBar in PLView: isProgressBarVisible, showProgressBar, hideProgressBar and load methods.
+- onContentViewCreated event in PLView: Allows to return the root content view that Activity will use.
+- Sensorial rotation now supports gyroscope and works together with touch events.
+- Optimizations for glues library.
+
+Notes:
+
+- PanoramaGL only supports images with sizes at power of two e.g. 2048x1024, 1024x1024, 1024x512, 512x512, 512x256, 256x256, 256x128.
+
+0.1 r1 (August/2012)
+====================
+
+Bugs fixed:
+
+- Appearance of images (distortion) when orientation change.
+- Memory leaks.
+
+Improvements:
+
+- Change of LGPL license to Apache 2.0 license.
+- Support for architectures ARM v7, x86 and MIPS.
+- Support for Hotspots (see PLHotspot class).
+- Spherical images supports up 2048x1024 texture (see PLSpherical2Panorama class).
+- Support for sensorial rotation (see startSensorialRotation method on PLView class).
+- Support for simple JSON protocol (see PLJSONLoader class and load method on PLView class).
+- New zoomIn and zoomOut methods for camera (see getCamera() method on PLView class).
+
+0.1 Beta (July/2010)
+====================
+
+- Supports OpenGL ES 1.0
+- Support for ARM architecture
+- Tested with SDK 2.0 to 2.2
+- Supports cubic, spherical and cylindrical panoramic images
+- Allows scrolling and continuous scrolling
+- Supports scrolling left to right and from top to bottom using the accelerometer
+- Allows to use the inertia to stop scrolling
+- Supports zoom in and zoom out (moving two fingers on the screen)
+- Supports reset (when shake device)
+- Allows you to control the range of rotation in the x, y and z axis
+- Supports Portrait, Portrait Upside Down, Landscape Left and Landscape Right orientation using the accelerometer
+- Support for events on view

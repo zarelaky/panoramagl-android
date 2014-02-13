@@ -1,0 +1,31 @@
+{
+    "urlBase": "res://raw",
+    "type": "cubic",
+    "keep": "all",
+    "images":
+    {
+        "preview": "quito3_p",
+        "front": "quito3_f",
+        "back": "quito3_b",
+        "left": "quito3_l",
+        "right": "quito3_r",
+        "up": "quito3_u",
+        "down": "quito3_d"
+    },
+    "camera":
+    {
+    	"keep": "all"
+    },
+    "hotspots":
+	[
+		{
+			"id": 4,
+			"atv": 0.0,
+			"ath": 140.0,
+			"width": 0.05,
+			"height": 0.05,
+			"image": "hotspot",
+			"onClick": "lookAt(0.0, 140.0, true); load('res://raw/json_cubic_quito2', true, BLEND(2.0, 1.0), 0.0, 0.0)"
+		}
+	]
+}
